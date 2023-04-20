@@ -1,0 +1,27 @@
+{
+  "name": "mentalhealthcounselling-api",
+  "version": "1.0.0",
+  "description": "mentalHealthCounselling API",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "REST",
+    "RESTFUL",
+    "API",
+    "Node",
+    "MYSQL"
+  ],
+  "author": "PricaBicklass",
+  "license": "ISC",
+  "dependencies": {
+    "@nestjs/core": "^9.4.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
+    "nest": "^0.1.6",
+    "nodemon": "^2.0.22"
+  }
+}
