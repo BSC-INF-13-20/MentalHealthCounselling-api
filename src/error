@@ -1,0 +1,10 @@
+// //
+
+
+// @Post()
+// async create(@Body() createCatDto: CreateCatDto) {
+//   throw new HttpException({
+//     status: HttpStatus.FORBIDDEN,
+//     error: 'This is a custom message',
+//   }, 403);
+// }

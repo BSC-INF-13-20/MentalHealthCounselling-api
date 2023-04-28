@@ -1,10 +1,25 @@
-import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
-
+import { Module } from "@nestjs/common";
+import { TypeOrmModule } from "@nestjs/typeorm";
+import { UsersModule } from "./users/users.modules";
+import { AppController } from "./app.controller";
+import { AppService } from "./app.service";
+import {  User } from "./typeorm/entities/User";
+// import { Galley } from "./typeorm/entities/Galley";
+// import { GalleysModule } from './galleys/galleys.module';
 @Module({
-  imports: [],
-  controllers: [AppController],
-  providers: [AppService],
+  imports:[TypeOrmModule.forRoot({
+    type:'mysql',
+    host:'localhost',
+    port:3306,
+    username:'root',
+    password:'',
+    database:'OnlineMentalHealth',
+    entities:[User],
+    synchronize:true,
+
+  }),UsersModule],
+  controllers:[AppController],
+  providers:[AppService]
+
 })
-export class AppModule {}
+export class AppModule{}
