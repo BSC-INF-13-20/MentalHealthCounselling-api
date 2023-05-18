@@ -1,14 +1,3 @@
-// export type CreateGalleyparams={
-
-//     image:string;
-//     videos:string;
-//     artcles:string;
-// }
-
-
-
-
-
 export type CreateUserparams = {
     username:string;
     password:string;
@@ -18,6 +7,24 @@ export type CreateUserparams = {
 
  
 }
+export type CreateAccountparams = {
+    username: string;
+    email: string;
+    password:string;
+
+ 
+}
+
+export type UpdateAccountparams = {
+    username: string;
+    email: string;
+    password:string;
+
+ 
+}
+
+
+
 export type UpdateUserparams = {
     username:string;
     password:string;

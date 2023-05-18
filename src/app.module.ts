@@ -4,20 +4,23 @@ import { UsersModule } from "./users/users.modules";
 import { AppController } from "./app.controller";
 import { AppService } from "./app.service";
 import {  User } from "./typeorm/entities/User";
-// import { Galley } from "./typeorm/entities/Galley";
-// import { GalleysModule } from './galleys/galleys.module';
+import { AccountsModule } from './accounts/accounts.module';
+import { Account } from "./typeorm/entities/accounts";
+//import { VideoToolsModule } from './tools/VideoTools.module';
+//import { SessionModule } from './session/session.module';
+
 @Module({
   imports:[TypeOrmModule.forRoot({
-    type:'mysql',
+    type:'mariadb',
     host:'localhost',
     port:3306,
     username:'root',
     password:'',
-    database:'OnlineMentalHealth',
-    entities:[User],
+    database:'onlinementalhealth',
+    entities:[User,Account],
     synchronize:true,
 
-  }),UsersModule],
+  }),UsersModule, AccountsModule],
   controllers:[AppController],
   providers:[AppService]
 

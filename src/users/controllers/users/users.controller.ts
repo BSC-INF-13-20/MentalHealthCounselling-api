@@ -4,7 +4,7 @@ import { User } from "src/typeorm/entities/User";
 import { CreateUserDto } from "src/users/dtos/CreateUser.dto";
 import { UpdateUserDto } from "src/users/dtos/updateUser.dto";
 import { UsersService } from "src/users/services/users.services";
-import { Repository } from "typeorm";
+
 
 @Controller('users')
 export class UsersController{
