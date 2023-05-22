@@ -1,3 +1,5 @@
+import { type } from "os";
+
 export type CreateUserparams = {
     username:string;
     password:string;
@@ -34,8 +36,13 @@ export type UpdateUserparams = {
  
 }
 
-// export type UpdateGalleyparams = {
-//     image:string;
-//     videos:string;
-//     articles:string;
-// }
+
+export type CreateTherapistSessionparams = {
+    username: string;
+    duratition: string,
+}
+export type UpdateTherapistSessionparams = {
+    username:string;
+    duration:string;
+}
+

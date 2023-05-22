@@ -6,8 +6,10 @@ import { AppService } from "./app.service";
 import {  User } from "./typeorm/entities/User";
 import { AccountsModule } from './accounts/accounts.module';
 import { Account } from "./typeorm/entities/accounts";
-//import { VideoToolsModule } from './tools/VideoTools.module';
-//import { SessionModule } from './session/session.module';
+import { VideoTools } from "./typeorm/entities/VideoTools";
+import { TherapistSession } from "./typeorm/entities/therapistSession";
+import { TherapistSessionModule } from "./therapistSession/therapistSession.module";
+import { VideoToolsModel } from "./tools/VideoTools.module";
 
 @Module({
   imports:[TypeOrmModule.forRoot({
@@ -17,10 +19,11 @@ import { Account } from "./typeorm/entities/accounts";
     username:'root',
     password:'',
     database:'onlinementalhealth',
-    entities:[User,Account],
-    synchronize:true,
+    entities:[User,Account,VideoTools,TherapistSession],
+    synchronize:false,
+    autoLoadEntities:true,
 
-  }),UsersModule, AccountsModule],
+  }),UsersModule, AccountsModule,TherapistSessionModule,VideoToolsModel],
   controllers:[AppController],
   providers:[AppService]
 

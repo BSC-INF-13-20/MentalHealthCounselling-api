@@ -15,10 +15,6 @@ export class UsersService{
         return this.userRepository.find();
    
     }
-
-
-    
-
     createUser(userDetails: CreateUserparams){
       const newUser=this.userRepository.create({
           ...userDetails,
@@ -26,10 +22,7 @@ export class UsersService{
       });
       return this.userRepository.save(newUser);
   }
-  
 
-
-    
     updateUser(id:number,updateUserDetails:UpdateUserparams){
         return this.userRepository.update({id},{...updateUserDetails});
 

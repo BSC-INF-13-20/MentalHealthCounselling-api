@@ -1,9 +1,10 @@
 import { Body, Controller, Delete, Get, Param, ParseIntPipe, Post, Put } from '@nestjs/common';
+import { ApiTags } from '@nestjs/swagger';
 import { CreateAccountDto } from 'src/accounts/CreateAccount.dto';
 import { UpdateAccountDto } from 'src/accounts/UpdateAccount.dto';
 import { AccountsService } from 'src/accounts/services/accounts/accounts.service';
 import { UpdateUserDto } from 'src/users/dtos/updateUser.dto';
-
+@ApiTags('ACCOUNTS')
 @Controller('accounts')
 export class AccountsController {
     
