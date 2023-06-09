@@ -1,18 +1,18 @@
-export class UpdatetherapySessionDto{
-    ID: number;
+// export class UpdatetherapySessionDto{
+//     ID: number;
 
   
-    title: String;
+//     title: String;
 
-    subject: String;
+//     subject: String;
 
   
-    instructor: String;
+//     instructor: String;
 
    
-    topic: String;
+//     topic: String;
 
 
-    language: String;
+//     language: String;
 
-}
+// }

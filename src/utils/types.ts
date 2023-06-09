@@ -37,12 +37,12 @@ export type UpdateUserparams = {
 }
 
 
-export type CreateTherapistSessionparams = {
-    username: string;
-    duratition: string,
-}
-export type UpdateTherapistSessionparams = {
-    username:string;
-    duration:string;
-}
+// export type CreateTherapistSessionparams = {
+//     username: string;
+//     duratition: string,
+// }
+// export type UpdateTherapistSessionparams = {
+//     username:string;
+//     duration:string;
+// }
 

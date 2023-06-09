@@ -7,8 +7,8 @@ import {  User } from "./typeorm/entities/User";
 import { AccountsModule } from './accounts/accounts.module';
 import { Account } from "./typeorm/entities/accounts";
 import { VideoTools } from "./typeorm/entities/VideoTools";
-import { TherapistSession } from "./typeorm/entities/therapistSession";
-import { TherapistSessionModule } from "./therapistSession/therapistSession.module";
+// import { TherapistSession } from "./typeorm/entities/therapistSession";
+// import { TherapistSessionModule } from "./therapistSession/therapistSession.module";
 import { VideoToolsModel } from "./tools/VideoTools.module";
 
 @Module({
@@ -19,11 +19,11 @@ import { VideoToolsModel } from "./tools/VideoTools.module";
     username:'sql10624759',
     password:'UupbC4YS7p',
     database:'sql10624759',
-    entities:[User,Account,VideoTools,TherapistSession],
+    entities:[User,Account,VideoTools],
     synchronize:true,
-    autoLoadEntities:true,
+    // autoLoadEntities:true,
 
-  }),UsersModule, AccountsModule,TherapistSessionModule,VideoToolsModel],
+  }),UsersModule, AccountsModule,VideoToolsModel],
   controllers:[AppController],
   providers:[AppService]
 

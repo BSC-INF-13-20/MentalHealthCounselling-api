@@ -1,18 +1,18 @@
-export class CreatetherapySessionDto{
-    ID: number;
+// export class CreatetherapySessionDto{
+//     ID: number;
 
   
-    title: String;
+//     title: String;
 
-    subject: String;
+//     subject: String;
 
   
-    instructor: String;
+//     instructor: String;
 
    
-    topic: String;
+//     topic: String;
 
 
-    language: String;
+//     language: String;
 
-}
+// }

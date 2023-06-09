@@ -1,18 +1,18 @@
-import { Test, TestingModule } from '@nestjs/testing';
-import { TherapistSessionService } from './therapistSession.service';
+// import { Test, TestingModule } from '@nestjs/testing';
+// import { TherapistSessionService } from './therapistSession.service';
 
-describe('therapistSessionService', () => {
-  let service: TherapistSessionService;
+// describe('therapistSessionService', () => {
+//   let service: TherapistSessionService;
 
-  beforeEach(async () => {
-    const module: TestingModule = await Test.createTestingModule({
-      providers: [TherapistSessionService],
-    }).compile();
+//   beforeEach(async () => {
+//     const module: TestingModule = await Test.createTestingModule({
+//       providers: [TherapistSessionService],
+//     }).compile();
 
-    service = module.get<TherapistSessionService>(TherapistSessionService);
-  });
+//     service = module.get<TherapistSessionService>(TherapistSessionService);
+//   });
 
-  it('should be defined', () => {
-    expect(service).toBeDefined();
-  });
-});
+//   it('should be defined', () => {
+//     expect(service).toBeDefined();
+//   });
+// });
