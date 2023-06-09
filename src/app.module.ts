@@ -13,14 +13,14 @@ import { VideoToolsModel } from "./tools/VideoTools.module";
 
 @Module({
   imports:[TypeOrmModule.forRoot({
-    type:'mariadb',
-    host:'localhost',
+    type:'mysql',
+    host:'sql10.freesqldatabase.com',
     port:3306,
-    username:'root',
-    password:'',
-    database:'onlinementalhealth',
+    username:'sql10624759',
+    password:'UupbC4YS7p',
+    database:'sql10624759',
     entities:[User,Account,VideoTools,TherapistSession],
-    synchronize:false,
+    synchronize:true,
     autoLoadEntities:true,
 
   }),UsersModule, AccountsModule,TherapistSessionModule,VideoToolsModel],
