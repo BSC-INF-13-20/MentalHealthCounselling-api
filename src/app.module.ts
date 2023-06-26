@@ -19,6 +19,8 @@ import { VideoToolsModel } from "./tools/VideoTools.module";
     username:'bicklass2',
     password:'Ralph.2756',
     database:'ralphael2',
+
+    //
     entities:[User,Account,VideoTools],
     synchronize:true,
     // autoLoadEntities:true,
