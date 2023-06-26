@@ -16,11 +16,10 @@ import { VideoToolsModel } from "./tools/VideoTools.module";
     type:'mysql',
     host:'db4free.net',
     port:3306,
-    username:'bicklass2',
-    password:'Ralph.2756',
-    database:'raphael2',
+    username:'innocent2',
+    password:'bicklass',
+    database:'gomwaa',
 
-    //
     entities:[User,Account,VideoTools],
     synchronize:true,
     // autoLoadEntities:true,
