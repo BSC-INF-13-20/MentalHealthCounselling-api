@@ -18,7 +18,7 @@ import { VideoToolsModel } from "./tools/VideoTools.module";
     port:3306,
     username:'bicklass2',
     password:'Ralph.2756',
-    database:'ralphael2',
+    database:'raphael2',
 
     //
     entities:[User,Account,VideoTools],
