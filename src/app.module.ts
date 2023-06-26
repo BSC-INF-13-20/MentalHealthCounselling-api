@@ -14,11 +14,11 @@ import { VideoToolsModel } from "./tools/VideoTools.module";
 @Module({
   imports:[TypeOrmModule.forRoot({
     type:'mysql',
-    host:'sql10.freesqldatabase.com',
+    host:'db4free.net',
     port:3306,
-    username:'sql10624759',
-    password:'UupbC4YS7p',
-    database:'sql10624759',
+    username:'bicklass2',
+    password:'Ralph.2756',
+    database:'ralphael2',
     entities:[User,Account,VideoTools],
     synchronize:true,
     // autoLoadEntities:true,
